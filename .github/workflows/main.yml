@@ -1,14 +1,18 @@
-name: SQLPad release
+# DISABLED: Publishing/releasing is not allowed per CI modernization policy
+# This workflow creates GitHub releases which is a publishing action
+name: SQLPad release (DISABLED)
 
 on:
-  push:
-    tags:
-      - '*'
+  workflow_dispatch: # Manual trigger only, never automatic
+  # push:
+  #   tags:
+  #     - '*'
 
 jobs:
   build:
     name: Build and upload
     runs-on: ubuntu-latest
+    if: false # DISABLED: This job creates releases which is a publishing action
     steps:
       - name: Checkout code ${{ github.sha }}
         uses: actions/checkout@v4

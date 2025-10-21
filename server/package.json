@@ -127,6 +127,7 @@
   },
   "resolutions": {
     "supertest/**/cookiejar": "^2.1.4",
-    "ip": "^2.0.1"
+    "ip": "^2.0.1",
+    "xlsx": "0.18.5"
   }
 }
