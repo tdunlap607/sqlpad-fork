@@ -1466,12 +1466,12 @@ cryptr@^6.0.2:
   integrity sha512-9jpMU9HMt1vhMUqNO+MPuGEpbh/f7HHZdxrd6L2DMwTuYGyt9pgUJfQyTS1Ei4/sn7qPM4FkjxUoiW79k0x8sA==
 
 csvtojson@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/csvtojson/-/csvtojson-2.0.10.tgz#11e7242cc630da54efce7958a45f443210357574"
-  integrity sha512-lUWFxGKyhraKCW8Qghz6Z0f2l/PqB1W3AO0HKJzGIQ5JRSlR651ekJDiGJbBT4sRNNv5ddnSGVEnsxP9XRCVpQ==
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/csvtojson/-/csvtojson-2.0.11.tgz#82fdfea09991feba3f55ad3a342101ae6c5d85e5"
+  integrity sha512-i+hJfMiLl6zR8lqTJ5we1Icg7FcL6Y8RyG0W8tXKkXwUUI8aifMGvEi4XYRsEtUuFZsz3t5Yvh/8Idtet7jbMQ==
   dependencies:
     bluebird "^3.5.1"
-    lodash "^4.17.3"
+    lodash "^4.17.15"
     strip-bom "^2.0.0"
 
 data-uri-to-buffer@^4.0.0:
@@ -3344,7 +3344,7 @@ lodash.once@^4.0.0:
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==
 
-lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3:
+lodash@^4.17.15, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -3831,12 +3831,12 @@ node-notifier@^8.0.1:
     uuid "^8.3.0"
     which "^2.0.2"
 
-node-xlsx@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/node-xlsx/-/node-xlsx-0.24.0.tgz#a6a365acb18ad37c66c2b254b6ebe0c22dc9dc6f"
-  integrity sha512-1olwK48XK9nXZsyH/FCltvGrQYvXXZuxVitxXXv2GIuRm51aBi1+5KwR4rWM4KeO61sFU+00913WLZTD+AcXEg==
+node-xlsx@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/node-xlsx/-/node-xlsx-0.22.0.tgz#a5ba1f6526d9c2a4b5ea376d9ccd6c3da60159c0"
+  integrity sha512-3ItPKzADlc3bbBZHJ5eYfyA7ZKjdjfcU+rSGqAjj+FUblD0iEOvv0e7EyvLD1TJlbBNjuipAWanoo0dP1O4eSA==
   dependencies:
-    xlsx "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
+    xlsx "^0.18.5"
 
 nopt@^5.0.0:
   version "5.0.0"
@@ -5851,7 +5851,7 @@ wsl-utils@^0.1.0:
   dependencies:
     is-wsl "^3.1.0"
 
-xlsx@0.18.5, "xlsx@https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz":
+xlsx@^0.18.5:
   version "0.18.5"
   resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.18.5.tgz#16711b9113c848076b8a177022799ad356eba7d0"
   integrity sha512-dmg3LCjBPHZnQp5/F/+nnTa+miPJxUXB6vtk42YjBBKayDNagxGEeIdWApkYPOf3Z3pm3k62Knjzp7lMeTEtFQ==
