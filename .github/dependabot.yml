@@ -1,0 +1,67 @@
+# Dependabot configuration for automated dependency updates
+# IMPORTANT: All publishing workflows are disabled - this only creates PRs
+# No automatic merging, publishing, or deploying will occur
+
+version: 2
+updates:
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      
+  # Root workspace (prettier, husky, lint-staged)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "deps"
+    # Only security updates for root to minimize churn
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+        
+  # Client package
+  - package-ecosystem: "npm"
+    directory: "/client"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "npm"
+      - "client"
+    commit-message:
+      prefix: "deps"
+    # Allow minor and patch updates, but be cautious with majors
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+        
+  # Server package
+  - package-ecosystem: "npm"
+    directory: "/server"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "npm"
+      - "server"
+    commit-message:
+      prefix: "deps"
+    # Allow minor and patch updates, but be cautious with majors
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]

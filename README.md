@@ -1,3 +1,14 @@
+## Fork Status
+
+[![Test](https://github.com/tdunlap607/sqlpad-fork/actions/workflows/test.yml/badge.svg)](https://github.com/tdunlap607/sqlpad-fork/actions/workflows/test.yml)
+[![Lint](https://github.com/tdunlap607/sqlpad-fork/actions/workflows/lint.yml/badge.svg)](https://github.com/tdunlap607/sqlpad-fork/actions/workflows/lint.yml)
+
+This is a fork of the archived SQLPad project with CI restored and dependencies modernized. See [CI-STATUS.md](CI-STATUS.md) for details on CI/CD status, security considerations, and build instructions.
+
+**Important**: All publishing workflows are disabled. This fork is for testing and development only.
+
+---
+
 ## This Project is Archived
 
 Node and React are unkind to long-lived projects. Libraries and trends are constantly changing. Dependencies will be abandoned.
